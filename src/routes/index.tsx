@@ -463,7 +463,7 @@ function Confidence() {
           </p>
         </div>
         <div className="rounded-md p-7" style={{ background: NAVY, color: "#f7f5ed" }}>
-          <div className="font-display" style={{ color: LEMON, fontSize: 92, lineHeight: 1 }}>
+          <div className="font-display" style={{ color: BLUE, fontSize: 92, lineHeight: 1 }}>
             27
           </div>
           <div className="font-serif mt-3" style={{ fontSize: 22, lineHeight: 1.35 }}>
@@ -522,7 +522,7 @@ function Voices() {
         />
       </div>
 
-      <div className="mt-14 rounded-md p-7 md:p-9" style={{ background: LEMON, border: `1px solid ${NAVY}` }}>
+      <div className="mt-14 rounded-md p-7 md:p-9" style={{ background: "#ffffff", border: `1px solid ${NAVY}` }}>
         <div className="kicker" style={{ color: NAVY }}>What the girls value most</div>
         <div className="rule-thick my-4" style={{ background: NAVY }} />
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3 font-serif" style={{ color: NAVY, fontSize: 20 }}>
@@ -767,7 +767,7 @@ function Core() {
       <div className="mt-14 grid md:grid-cols-3 gap-4">
         <StatCard n="126" l="Girls attended at least one session" />
         <StatCard n="+20 pts" l="Attendance rate lift from Week 1 to Week 11" variant="blue" />
-        <StatCard n="83%" l="Peak weekly attendance rate, Week 11" variant="lemon" />
+        <StatCard n="83%" l="Peak weekly attendance rate, Week 10" variant="blue" />
       </div>
     </Section>
   );
@@ -807,10 +807,10 @@ function Ahead() {
   return (
     <Section id="ahead" bg="navy">
       <div className="mb-10">
-        <div className="kicker" style={{ color: LEMON }}>07 · Looking Ahead</div>
-        <div className="rule-thick mb-6" style={{ background: LEMON }} />
+        <div className="kicker" style={{ color: BLUE }}>07 · Looking Ahead</div>
+        <div className="rule-thick mb-6" style={{ background: BLUE }} />
         <h2 className="font-serif font-bold leading-[1.05] tracking-tight" style={{ color: "#f7f5ed", fontSize: "clamp(40px, 6vw, 68px)" }}>
-          Building on <span style={{ color: LEMON, fontStyle: "italic" }}>a strong first year.</span>
+          Building on <span style={{ color: BLUE, fontStyle: "italic" }}>a strong first year.</span>
         </h2>
       </div>
 
@@ -823,7 +823,7 @@ function Ahead() {
       <div className="mt-12 grid md:grid-cols-2 gap-x-8 gap-y-8">
         {steps.map((s, i) => (
           <div key={s.t} className="grid grid-cols-[64px_1fr] gap-5">
-            <div className="font-display" style={{ color: LEMON, fontSize: 44, lineHeight: 1 }}>
+            <div className="font-display" style={{ color: BLUE, fontSize: 44, lineHeight: 1 }}>
               {String(i + 1).padStart(2, "0")}
             </div>
             <div>
@@ -842,7 +842,7 @@ function Ahead() {
         </div>
         <div className="mt-6 flex items-center gap-4">
           <img src={flagLogo.url} alt="Fight Like a Girl" className="h-10 w-auto object-contain" />
-          <div className="font-display" style={{ color: LEMON, fontSize: 12, letterSpacing: "0.22em" }}>
+          <div className="font-display" style={{ color: BLUE, fontSize: 12, letterSpacing: "0.22em" }}>
             Fight Like a Girl · 2026–29 Research Cycle
           </div>
         </div>
