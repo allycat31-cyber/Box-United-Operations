@@ -527,11 +527,11 @@ function Voices() {
         <div className="rule-thick my-4" style={{ background: NAVY }} />
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3 font-serif" style={{ color: NAVY, fontSize: 20 }}>
           {[
-            ["Boxing & physical training", "28"],
-            ["The other girls in the program", "23"],
-            ["My coach", "22"],
-            ["How I feel after class", "22"],
-            ["Learning about confidence & mindset", "18"],
+            ["Boxing & physical training", "47%"],
+            ["The other girls in the program", "38%"],
+            ["My coach", "37%"],
+            ["How I feel after class", "37%"],
+            ["Learning about confidence & mindset", "30%"],
           ].map(([l, n]) => (
             <div key={l} className="flex items-baseline justify-between gap-4 py-2 border-b" style={{ borderColor: "rgba(0,28,51,0.2)" }}>
               <span>{l}</span>
