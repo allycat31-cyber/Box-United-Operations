@@ -706,7 +706,6 @@ function Core() {
     { w: 8, v: 59, r: "72.8%" },
     { w: 9, v: 44, r: "69.8%" },
     { w: 10, v: 30, r: "68.2%" },
-    { w: 11, v: 5, r: "83.3%" },
   ];
   const maxV = 82;
   return (
@@ -717,9 +716,9 @@ function Core() {
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
         One of the clearest signals of the season is quiet: as the calendar filled with end-of-year
         events and competing activities, the girls who stayed in FLAG showed up{" "}
-        <em>more reliably</em>, not less. Weekly attendance rates <strong>rose</strong> from 63% in
-        Week 1 to 83% in Week 11. A smaller, committed core of fighters kept coming, and their
-        rate of return climbed with them.
+        <em>more reliably</em>, not less. Weekly attendance rates climbed from{" "}
+        <strong>63% in Week 1</strong> to nearly <strong>73% by Week 8</strong>. A smaller,
+        committed core of fighters kept coming, and their rate of return climbed with them.
       </p>
 
       <div className="mt-12 rounded-md p-8" style={{ background: "#ffffff", border: "1px solid rgba(0,28,51,0.12)" }}>
@@ -735,9 +734,9 @@ function Core() {
             <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{ background: BLUE }} /> Attendance rate</span>
           </div>
         </div>
-        <div className="grid grid-cols-11 gap-2 items-end h-56">
+        <div className="grid grid-cols-10 gap-2 h-56">
           {weekly.map((w) => (
-            <div key={w.w} className="flex flex-col items-center gap-1">
+            <div key={w.w} className="flex flex-col items-center justify-end gap-1 h-full">
               <div
                 className="w-full rounded-t-sm"
                 style={{
@@ -751,7 +750,7 @@ function Core() {
             </div>
           ))}
         </div>
-        <div className="mt-6 grid grid-cols-11 gap-2 text-center">
+        <div className="mt-6 grid grid-cols-10 gap-2 text-center">
           {weekly.map((w) => (
             <div key={w.w} className="font-display" style={{ color: BLUE, fontSize: 11 }}>
               {w.r}
@@ -759,15 +758,15 @@ function Core() {
           ))}
         </div>
         <p className="mt-6 font-body italic" style={{ color: NAVY, opacity: 0.75, fontSize: 14 }}>
-          Headcount narrowed. The core stayed, and their rate of return climbed 20 points from
-          Week 1 to Week 11.
+          Headcount narrowed. The core stayed, and their rate of return climbed roughly 10 points
+          from Week 1 to Week 8.
         </p>
       </div>
 
       <div className="mt-14 grid md:grid-cols-3 gap-4">
         <StatCard n="126" l="Girls attended at least one session" />
-        <StatCard n="+20 pts" l="Attendance rate lift from Week 1 to Week 11" variant="blue" />
-        <StatCard n="83%" l="Peak weekly attendance rate, Week 10" variant="blue" />
+        <StatCard n="+10 pts" l="Attendance rate lift from Week 1 to Week 8" variant="blue" />
+        <StatCard n="72.8%" l="Peak weekly attendance rate, Week 8" variant="blue" />
       </div>
     </Section>
   );
