@@ -84,10 +84,12 @@ function StatCard({
   n,
   l,
   variant = "blue",
+  nSize = "clamp(44px, 6vw, 64px)",
 }: {
   n: string;
   l: string;
   variant?: "blue" | "navy" | "lemon";
+  nSize?: string;
 }) {
   const bg =
     variant === "navy" ? NAVY : variant === "lemon" ? LEMON : "#ffffff";
@@ -103,7 +105,7 @@ function StatCard({
     >
       <div
         className="font-display"
-        style={{ color: numColor, fontSize: "clamp(44px, 6vw, 64px)", lineHeight: 1 }}
+        style={{ color: numColor, fontSize: nSize, lineHeight: 1 }}
       >
         {n}
       </div>
@@ -382,7 +384,7 @@ function ExecutiveSummary() {
         <StatCard n="216" l="Girls enrolled this season" />
         <StatCard n="14" l="Chicago program sites" />
         <StatCard n="85%" l="Feel more confident after FLAG" variant="blue" />
-        <StatCard n="4.2/5" l="Average confidence rating" />
+        <StatCard n="4.2/5" l="Average confidence rating" nSize="clamp(38px, 5vw, 54px)" />
       </div>
 
       <div className="mt-14 grid md:grid-cols-3 gap-4">
