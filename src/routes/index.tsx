@@ -192,7 +192,7 @@ function Quote({
         className="mt-4 font-display"
         style={{ color: BLUE, fontSize: 12, letterSpacing: "0.22em" }}
       >
-        — {who}
+       , {who}
       </figcaption>
     </figure>
   );
@@ -430,7 +430,7 @@ function Confidence() {
       } />
 
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
-        The confidence pillar's success benchmark is straightforward — <strong>80% or more</strong>{" "}
+        The confidence pillar's success benchmark is straightforward, <strong>80% or more</strong>{" "}
         of girls report feeling more confident after the program. FLAG cleared it on the two
         headline items and on the growth-mindset item too, with a composite rate of{" "}
         <strong>90%</strong> across the two core confidence measures.
@@ -444,7 +444,7 @@ function Confidence() {
           ))}
         </div>
         <p className="mt-4 font-body italic" style={{ color: NAVY, opacity: 0.7, fontSize: 14 }}>
-          The physical and the psychological move together — girls who feel stronger also feel
+          The physical and the psychological move together, girls who feel stronger also feel
           more sure of themselves.
         </p>
       </div>
@@ -459,7 +459,7 @@ function Confidence() {
           </div>
           <p className="mt-4 font-body" style={{ color: NAVY, fontSize: 15, opacity: 0.8, lineHeight: 1.55 }}>
             Confidence gains are shared across the elementary and middle-school grades that make
-            up 56 of 60 respondents — a broad, consistent result rather than a spike at one age.
+            up 56 of 60 respondents, a broad, consistent result rather than a spike at one age.
           </p>
         </div>
         <div className="rounded-md p-7" style={{ background: NAVY, color: "#f7f5ed" }}>
@@ -467,7 +467,7 @@ function Confidence() {
             27
           </div>
           <div className="font-serif mt-3" style={{ fontSize: 22, lineHeight: 1.35 }}>
-            of 60 girls chose the top of the scale — "strongly agree" that they feel more confident
+            of 60 girls chose the top of the scale, "strongly agree" that they feel more confident
             after FLAG.
           </div>
           <div className="rule mt-6" style={{ background: "rgba(255,255,255,0.25)" }} />
@@ -491,8 +491,8 @@ function Voices() {
         <>In their <span style={{ color: BLUE, fontStyle: "italic" }}>own words.</span></>
       } />
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
-        Girls were never prompted with the word <em>confidence</em>. It surfaced anyway — again
-        and again — alongside themes that clearly live outside the gym.
+        Girls were never prompted with the word <em>confidence</em>. It surfaced anyway, again
+        and again, alongside themes that clearly live outside the gym.
       </p>
 
       <div className="mt-12 grid gap-5">
@@ -540,7 +540,7 @@ function Voices() {
           ))}
         </div>
         <p className="mt-5 font-body italic" style={{ color: NAVY, fontSize: 15, opacity: 0.85 }}>
-          Peers and coach rank nearly as high as the sport itself — a program girls feel they
+          Peers and coach rank nearly as high as the sport itself, a program girls feel they
           belong to. Confidence grows in exactly that kind of room.
         </p>
       </div>
@@ -575,7 +575,7 @@ function Reach() {
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
         FLAG is designed for South and West Side Chicago communities, and Spring 2026's roster
         reflects exactly that. <strong>135 girls</strong> receive free or reduced lunch and{" "}
-        <strong>90</strong> are identified as English Language Learners — strong signals that the
+        <strong>90</strong> are identified as English Language Learners, strong signals that the
         program is reaching the high-need student population it was built for.
       </p>
 
@@ -607,7 +607,7 @@ function Reach() {
             <Kicker>Neighborhoods represented</Kicker>
             <div className="rule-thick my-4" style={{ background: BLUE }} />
             <div className="font-serif font-bold" style={{ color: NAVY, fontSize: 28, lineHeight: 1.15 }}>
-              The strongest zip code is <span style={{ color: BLUE }}>60637</span> — Woodlawn and Greater Grand Crossing — with 28 girls.
+              The strongest zip code is <span style={{ color: BLUE }}>60637</span>, Woodlawn and Greater Grand Crossing, with 28 girls.
             </div>
             <ul className="mt-6 grid grid-cols-2 gap-y-2 gap-x-6 font-body" style={{ color: NAVY, fontSize: 16 }}>
               {[
@@ -645,7 +645,7 @@ function ShowedUp() {
     { site: "John Fiske Elementary", avg: 12.2, rate: "71%" },
     { site: "St. Ann School", avg: 10.3, rate: "88%" },
     { site: "Mason Elementary", avg: 8.4, rate: "79%" },
-    { site: "West Side Community", avg: 7.9, rate: "72%" },
+    { site: "West Side - Chicago Youth Boxing Club", avg: 7.9, rate: "72%" },
     { site: "Nightingale Elementary", avg: 6.9, rate: "70%" },
   ];
   return (
@@ -655,7 +655,7 @@ function ShowedUp() {
       } />
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
         Five sites delivered <strong>10 or more weeks</strong> of programming this season.
-        Ranked by average girls present per session, a clear top tier emerged — sites where
+        Ranked by average girls present per session, a clear top tier emerged, sites where
         rosters filled and stayed filled, where the coach–athlete relationship deepened week over
         week.
       </p>
@@ -683,8 +683,8 @@ function ShowedUp() {
 
       <div className="mt-12 grid md:grid-cols-3 gap-4">
         <StatCard n="5" l="Sites completed 10+ weeks of programming" variant="blue" />
-        <StatCard n="88%" l="Highest site attendance rate — St. Ann" />
-        <StatCard n="12.2" l="Girls per week — John Fiske, top site" />
+        <StatCard n="88%" l="Highest site attendance rate, St. Ann" />
+        <StatCard n="12.2" l="Girls per week, John Fiske, top site" />
       </div>
     </Section>
   );
@@ -718,7 +718,7 @@ function Core() {
         One of the clearest signals of the season is quiet: as the calendar filled with end-of-year
         events and competing activities, the girls who stayed in FLAG showed up{" "}
         <em>more reliably</em>, not less. Weekly attendance rates <strong>rose</strong> from 63% in
-        Week 1 to 83% in Week 11. A smaller, committed core of fighters kept coming — and their
+        Week 1 to 83% in Week 11. A smaller, committed core of fighters kept coming, and their
         rate of return climbed with them.
       </p>
 
@@ -759,7 +759,7 @@ function Core() {
           ))}
         </div>
         <p className="mt-6 font-body italic" style={{ color: NAVY, opacity: 0.75, fontSize: 14 }}>
-          Headcount narrowed. The core stayed — and their rate of return climbed 20 points from
+          Headcount narrowed. The core stayed, and their rate of return climbed 20 points from
           Week 1 to Week 11.
         </p>
       </div>
@@ -767,7 +767,7 @@ function Core() {
       <div className="mt-14 grid md:grid-cols-3 gap-4">
         <StatCard n="126" l="Girls attended at least one session" />
         <StatCard n="+20 pts" l="Attendance rate lift from Week 1 to Week 11" variant="blue" />
-        <StatCard n="83%" l="Peak weekly attendance rate — Week 11" variant="lemon" />
+        <StatCard n="83%" l="Peak weekly attendance rate, Week 11" variant="lemon" />
       </div>
     </Section>
   );
@@ -816,7 +816,7 @@ function Ahead() {
 
       <p className="font-body" style={{ color: "rgba(247,245,237,0.9)", fontSize: 18, lineHeight: 1.6 }}>
         Spring 2026 established the baseline. The three-year research cycle now has a first
-        chapter it can measure against — and a clear set of moves to make the next season even
+        chapter it can measure against, and a clear set of moves to make the next season even
         stronger.
       </p>
 
