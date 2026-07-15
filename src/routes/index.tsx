@@ -682,7 +682,7 @@ function ShowedUp() {
       </div>
 
       <div className="mt-12 grid md:grid-cols-3 gap-4">
-        <StatCard n="5" l="Sites completed 10+ weeks of programming" variant="blue" />
+        <StatCard n="76%" l="Combined attendance rate across top 5 sites" variant="blue" />
         <StatCard n="88%" l="Highest site attendance rate, St. Ann" />
         <StatCard n="12.2" l="Girls per week, John Fiske, top site" />
       </div>
