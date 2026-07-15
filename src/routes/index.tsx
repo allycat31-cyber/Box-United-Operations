@@ -248,15 +248,15 @@ function Hero() {
   return (
     <section id="top" className="relative w-full" style={{ background: "var(--cream)" }}>
       <div className="mx-auto max-w-[1120px] px-6 md:px-10 pt-28 md:pt-32 pb-16 md:pb-20">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-          <div>
+        <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center relative">
+          <div className="relative z-10">
             <div className="kicker">Spring 2026 · Season Report</div>
             <h1
               className="font-display mt-6 leading-[0.9]"
               style={{ color: NAVY, fontSize: "clamp(48px, 7vw, 88px)" }}
             >
-              Season<br />
-              of
+              Season of<br />
+              Confidence.
             </h1>
             <p
               className="mt-8 font-serif italic"
@@ -292,20 +292,6 @@ function Hero() {
                 className="w-full h-full object-cover"
                 style={{ display: "block" }}
               />
-              <div
-                className="absolute inset-x-0 bottom-0 pointer-events-none"
-                style={{
-                  background: "linear-gradient(180deg, rgba(0,28,51,0) 0%, rgba(0,28,51,0.75) 100%)",
-                  paddingTop: "40%",
-                }}
-              >
-                <div
-                  className="font-display px-6 pb-6 leading-[0.9]"
-                  style={{ color: "#fff", fontSize: "clamp(48px, 8vw, 104px)" }}
-                >
-                  Confidence.
-                </div>
-              </div>
             </div>
           </div>
         </div>
