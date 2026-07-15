@@ -381,7 +381,7 @@ function ExecutiveSummary() {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14">
-        <StatCard n="216" l="Girls enrolled this season" />
+        <StatCard n="126" l="Girls enrolled this season" />
         <StatCard n="14" l="Chicago program sites" />
         <StatCard n="85%" l="Feel more confident after FLAG" variant="blue" />
         <StatCard n="4.2/5" l="Average confidence rating" nSize="clamp(38px, 5vw, 54px)" />
