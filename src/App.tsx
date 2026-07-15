@@ -1,20 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import boxLogo from "@/assets/box-united-blue.png.asset.json";
-import flagHome from "@/assets/flag-home-2.webp.asset.json";
-import flagLogo from "@/assets/flag-sticker.png.asset.json";
-import girlsTwo from "@/assets/girls-two-new.jpg.asset.json";
-import chicagoMap from "@/assets/chicago-map-new.png.asset.json";
+import boxLogo from "@/assets/box-united-blue.png";
+import flagHome from "@/assets/flag-home-2.webp";
+import flagLogo from "@/assets/flag-sticker.png";
+import girlsTwo from "@/assets/girls-two-new.jpg";
+import chicagoMap from "@/assets/chicago-map-new.png";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { property: "og:image", content: flagHome.url },
-      { name: "twitter:image", content: flagHome.url },
-    ],
-  }),
-  component: ReportPage,
-});
+export default function App() {
+  return <ReportPage />;
+}
+
 
 const NAVY = "#001c33";
 const BLUE = "#0080f2";
