@@ -627,7 +627,7 @@ function Reach() {
             </ul>
           </div>
           <div className="relative min-h-[300px]" style={{ background: "var(--cream)" }}>
-            <img src={chicagoMap} alt="Map of Chicago showing FLAG neighborhoods" width={1024} height={1024} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />
+            <img src={chicagoMap.url} alt="Map of Chicago showing FLAG neighborhoods" loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />
           </div>
         </div>
       </div>
