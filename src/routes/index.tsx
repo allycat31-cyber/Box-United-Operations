@@ -251,8 +251,8 @@ function Hero() {
           <div>
             <div className="kicker">Spring 2026 · Season Report</div>
             <h1
-              className="font-display mt-6 leading-[0.88]"
-              style={{ color: NAVY, fontSize: "clamp(56px, 10vw, 112px)" }}
+              className="font-display mt-6 leading-[0.9]"
+              style={{ color: NAVY, fontSize: "clamp(48px, 7vw, 88px)" }}
             >
               Season<br />
               of <span style={{ color: BLUE }}>Confidence.</span>
