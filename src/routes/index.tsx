@@ -255,7 +255,7 @@ function Hero() {
               style={{ color: NAVY, fontSize: "clamp(48px, 7vw, 88px)" }}
             >
               Season<br />
-              of <span style={{ color: BLUE }}>Confidence.</span>
+              of
             </h1>
             <p
               className="mt-8 font-serif italic"
@@ -282,15 +282,29 @@ function Hero() {
           </div>
           <div className="relative">
             <div
-              className="rounded-md overflow-hidden bg-white"
+              className="rounded-md overflow-hidden bg-white relative"
               style={{ aspectRatio: "3 / 4", boxShadow: "0 30px 60px -30px rgba(0,28,51,0.35)" }}
             >
               <img
-                src={flagHome.url}
-                alt="A Fight Like a Girl athlete"
+                src={girlsTwo.url}
+                alt="Two Fight Like a Girl athletes"
                 className="w-full h-full object-cover"
                 style={{ display: "block" }}
               />
+              <div
+                className="absolute inset-x-0 bottom-0 pointer-events-none"
+                style={{
+                  background: "linear-gradient(180deg, rgba(0,28,51,0) 0%, rgba(0,28,51,0.75) 100%)",
+                  paddingTop: "40%",
+                }}
+              >
+                <div
+                  className="font-display px-6 pb-6 leading-[0.9]"
+                  style={{ color: "#fff", fontSize: "clamp(48px, 8vw, 104px)" }}
+                >
+                  Confidence.
+                </div>
+              </div>
             </div>
           </div>
         </div>
