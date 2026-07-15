@@ -294,8 +294,8 @@ function Hero() {
               />
             </div>
           </div>
-          </div>
         </div>
+      </div>
       </div>
       <div className="mx-auto max-w-[1120px] px-6 md:px-10 pb-14">
         <div className="rule" />
