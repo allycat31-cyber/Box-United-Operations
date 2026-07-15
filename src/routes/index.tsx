@@ -710,18 +710,18 @@ function ShowedUp() {
 
 function Core() {
   const weekly = [
-    { w: 1, v: 73, r: "62.9%" },
-    { w: 2, v: 78, r: "65.4%" },
-    { w: 3, v: 82, r: "66.1%" },
-    { w: 4, v: 80, r: "64.8%" },
-    { w: 5, v: 76, r: "65.5%" },
-    { w: 6, v: 58, r: "67.1%" },
-    { w: 7, v: 51, r: "68.4%" },
-    { w: 8, v: 59, r: "72.8%" },
-    { w: 9, v: 44, r: "69.8%" },
-    { w: 10, v: 30, r: "68.2%" },
+    { w: 1, rate: 62.9 },
+    { w: 2, rate: 65.4 },
+    { w: 3, rate: 66.1 },
+    { w: 4, rate: 64.8 },
+    { w: 5, rate: 65.5 },
+    { w: 6, rate: 67.1 },
+    { w: 7, rate: 68.4 },
+    { w: 8, rate: 72.8 },
+    { w: 9, rate: 69.8 },
+    { w: 10, rate: 68.2 },
   ];
-  const maxV = 82;
+  const chartMax = 80;
   return (
     <Section id="core" bg="cream">
       <SectionHeading eyebrow="06 · The Committed Core" title={
@@ -736,46 +736,50 @@ function Core() {
       </p>
 
       <div className="mt-12 rounded-md p-8" style={{ background: "#ffffff", border: "1px solid rgba(0,28,51,0.12)" }}>
-        <div className="flex items-baseline justify-between mb-6">
-          <div>
-            <Kicker>Weekly attendance rate</Kicker>
-            <div className="font-serif font-bold mt-2" style={{ color: NAVY, fontSize: 26 }}>
-              Rising commitment over the season
-            </div>
-          </div>
-          <div className="hidden sm:flex items-center gap-4 font-body text-[13px]" style={{ color: NAVY, opacity: 0.7 }}>
-            <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{ background: NAVY }} /> Girls present</span>
-            <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{ background: BLUE }} /> Attendance rate</span>
+        <div className="mb-8">
+          <Kicker>Weekly attendance rate</Kicker>
+          <div className="font-serif font-bold mt-2" style={{ color: NAVY, fontSize: 26 }}>
+            Rising commitment over the season
           </div>
         </div>
-        <div className="grid grid-cols-10 gap-2 h-56">
-          {weekly.map((w) => (
-            <div key={w.w} className="flex flex-col items-center justify-end gap-1 h-full">
-              <div
-                className="w-full rounded-t-sm"
-                style={{
-                  height: `${(w.v / maxV) * 100}%`,
-                  background: `linear-gradient(180deg, ${NAVY}, #26445e)`,
-                  minHeight: 4,
-                }}
-                title={`${w.v} girls`}
-              />
-              <div className="font-body" style={{ color: NAVY, fontSize: 11 }}>W{w.w}</div>
-            </div>
-          ))}
+        <div className="grid grid-cols-10 gap-2 h-64 items-end">
+          {weekly.map((w) => {
+            const pct = (w.rate / chartMax) * 100;
+            const isPeak = w.rate >= 72;
+            return (
+              <div key={w.w} className="flex flex-col items-center justify-end h-full">
+                <div
+                  className="font-display mb-2"
+                  style={{ color: isPeak ? BLUE : NAVY, fontSize: 13 }}
+                >
+                  {w.rate.toFixed(1)}%
+                </div>
+                <div
+                  className="w-full rounded-t-sm"
+                  style={{
+                    height: `${pct}%`,
+                    background: isPeak
+                      ? `linear-gradient(180deg, ${BLUE}, #4aa8ff)`
+                      : `linear-gradient(180deg, ${NAVY}, #26445e)`,
+                    minHeight: 4,
+                  }}
+                />
+              </div>
+            );
+          })}
         </div>
-        <div className="mt-6 grid grid-cols-10 gap-2 text-center">
+        <div className="mt-3 grid grid-cols-10 gap-2 text-center">
           {weekly.map((w) => (
-            <div key={w.w} className="font-display" style={{ color: BLUE, fontSize: 11 }}>
-              {w.r}
+            <div key={w.w} className="font-body" style={{ color: NAVY, fontSize: 11, opacity: 0.75 }}>
+              W{w.w}
             </div>
           ))}
         </div>
         <p className="mt-6 font-body italic" style={{ color: NAVY, opacity: 0.75, fontSize: 14 }}>
-          Headcount narrowed. The core stayed, and their rate of return climbed roughly 10 points
-          from Week 1 to Week 8.
+          The core stayed, and their rate of return climbed roughly 10 points from Week 1 to Week 8.
         </p>
       </div>
+
 
       <div className="mt-14 grid md:grid-cols-3 gap-4">
         <StatCard n="126" l="Girls attended at least one session" />
