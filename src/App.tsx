@@ -215,7 +215,7 @@ function TopNav() {
     >
       <div className="mx-auto max-w-[1120px] px-6 md:px-10 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <img src={boxLogo.url} alt="Box United" className="h-8 w-auto object-contain" />
+          <img src={boxLogo} alt="Box United" className="h-8 w-auto object-contain" />
         </a>
         <nav className="hidden md:flex items-center gap-6">
           {toc.slice(0, 4).map((t) => (
@@ -281,7 +281,7 @@ function Hero() {
               style={{ aspectRatio: "3 / 4", boxShadow: "0 30px 60px -30px rgba(0,28,51,0.35)" }}
             >
               <img
-                src={girlsTwo.url}
+                src={girlsTwo}
                 alt="Two Fight Like a Girl athletes"
                 className="w-full h-full object-cover"
                 style={{ display: "block" }}
@@ -622,7 +622,7 @@ function Reach() {
             </ul>
           </div>
           <div className="relative min-h-[300px]" style={{ background: "var(--cream)" }}>
-            <img src={chicagoMap.url} alt="Map of Chicago showing FLAG neighborhoods" loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />
+            <img src={chicagoMap} alt="Map of Chicago showing FLAG neighborhoods" loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />
           </div>
         </div>
       </div>
@@ -838,7 +838,7 @@ function Ahead() {
           “Boxing is the vehicle. The belief that they are capable is the destination.”
         </div>
         <div className="mt-6 flex items-center gap-4">
-          <img src={flagLogo.url} alt="Fight Like a Girl" className="h-10 w-auto object-contain" />
+          <img src={flagLogo} alt="Fight Like a Girl" className="h-10 w-auto object-contain" />
           <div className="font-display" style={{ color: BLUE, fontSize: 12, letterSpacing: "0.22em" }}>
             Fight Like a Girl · 2026–29 Research Cycle
           </div>
@@ -857,7 +857,7 @@ function Footer() {
     <footer style={{ background: "var(--cream)" }} className="w-full border-t" >
       <div className="mx-auto max-w-[1120px] px-6 md:px-10 py-14 grid md:grid-cols-[1fr_auto] items-end gap-8">
         <div>
-          <img src={boxLogo.url} alt="Box United" className="h-10 w-auto object-contain" />
+          <img src={boxLogo} alt="Box United" className="h-10 w-auto object-contain" />
           <p className="mt-5 font-body max-w-md" style={{ color: NAVY, fontSize: 14, lineHeight: 1.6, opacity: 0.75 }}>
             Box United is a Chicago-based nonprofit that uses the sport of boxing to help
             students become leaders in life. Fight Like a Girl is our flagship program for
