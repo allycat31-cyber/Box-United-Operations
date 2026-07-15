@@ -4,6 +4,7 @@ import boxLogo from "@/assets/box-united-logo.png.asset.json";
 import flagHome from "@/assets/flag-home.webp.asset.json";
 import girlsTwo from "@/assets/girls-two.jpg.asset.json";
 import flagLogo from "@/assets/flag-logo.png.asset.json";
+import chicagoMap from "@/assets/chicago-map.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
