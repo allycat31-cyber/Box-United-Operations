@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import boxLogo from "@/assets/box-united-logo.png.asset.json";
-import flagHome from "@/assets/flag-home.webp.asset.json";
-import girlsTwo from "@/assets/girls-two.jpg.asset.json";
-import flagLogo from "@/assets/flag-logo.png.asset.json";
-import chicagoMap from "@/assets/chicago-map.png";
+import boxLogo from "@/assets/box-united-blue.png.asset.json";
+import flagHome from "@/assets/flag-home-2.webp.asset.json";
+import flagLogo from "@/assets/flag-sticker.png.asset.json";
+import chicagoMap from "@/assets/chicago-map-new.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -252,8 +251,8 @@ function Hero() {
           <div>
             <div className="kicker">Spring 2026 · Season Report</div>
             <h1
-              className="font-display mt-6 leading-[0.88]"
-              style={{ color: NAVY, fontSize: "clamp(56px, 10vw, 112px)" }}
+              className="font-display mt-6 leading-[0.9]"
+              style={{ color: NAVY, fontSize: "clamp(48px, 7vw, 88px)" }}
             >
               Season<br />
               of <span style={{ color: BLUE }}>Confidence.</span>
@@ -628,7 +627,7 @@ function Reach() {
             </ul>
           </div>
           <div className="relative min-h-[300px]" style={{ background: "var(--cream)" }}>
-            <img src={chicagoMap} alt="Map of Chicago showing FLAG neighborhoods" width={1024} height={1024} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />
+            <img src={chicagoMap.url} alt="Map of Chicago showing FLAG neighborhoods" loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />
           </div>
         </div>
       </div>
