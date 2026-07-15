@@ -364,22 +364,22 @@ function ExecutiveSummary() {
       } />
       <div className="prose-none font-body space-y-5" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
         <p>
-          The Spring 2026 season of Fight Like a Girl reached <strong>216 girls</strong> across{" "}
+          The Spring 2026 season of Fight Like a Girl reached <strong>126 girls</strong> across{" "}
           <strong>14 Chicago sites</strong>, welcoming a new class of fighters into the ring and
           into the Fighter's Mindset curriculum. It is the first year of a three-year research
           cycle, and the first pillar under study is <em>confidence</em>.
         </p>
         <p>
-          The pillar cleared its benchmark decisively. <strong>85% of girls</strong> reported
-          feeling more confident after the program — a result that held across grades, sites, and
-          the elementary and middle-school groups that make up the heart of FLAG. Every survey
-          item measuring confidence, growth mindset, and physical identity averaged{" "}
-          <strong>above 4.0 on a 5-point scale</strong>.
+          The pillar cleared its benchmark decisively. Of the <strong>60 girls surveyed</strong>,{" "}
+          <strong>85%</strong> reported feeling more confident after the program, a result that
+          held across grades, sites, and the elementary and middle-school groups that make up the
+          heart of FLAG. Every survey item measuring confidence, growth mindset, and physical
+          identity averaged <strong>above 4.0 on a 5-point scale</strong>.
         </p>
         <p>
           The season also revealed a committed core: girls whose attendance stayed steady even as
-          schedules got busy, whose weekly rate <em>rose</em> in the back half of the season.
-          Their words — captured throughout this report — describe confidence that reaches beyond
+          schedules got busy, and whose weekly rate <em>rose</em> in the back half of the season.
+          Their words, captured throughout this report, describe confidence that reaches beyond
           the gym, into classrooms, friendships, and how they see their own bodies.
         </p>
       </div>
@@ -398,8 +398,8 @@ function ExecutiveSummary() {
           { t: "Transfer is real", d: "Girls describe confidence at school, at home, and in their own bodies." },
         ].map((it) => (
           <div key={it.t} className="p-5" style={{ borderTop: `3px solid ${BLUE}` }}>
-            <div className="font-serif font-bold" style={{ color: NAVY, fontSize: 22 }}>{it.t}</div>
-            <div className="font-body mt-2" style={{ color: NAVY, opacity: 0.8, fontSize: 15, lineHeight: 1.5 }}>{it.d}</div>
+            <div className="font-serif font-bold whitespace-nowrap" style={{ color: NAVY, fontSize: 17 }}>{it.t}</div>
+            <div className="font-body mt-2" style={{ color: NAVY, opacity: 0.8, fontSize: 14, lineHeight: 1.5 }}>{it.d}</div>
           </div>
         ))}
       </div>
