@@ -255,14 +255,14 @@ function Hero() {
               className="font-display mt-6 leading-[0.88]"
               style={{ color: NAVY, fontSize: "clamp(56px, 10vw, 112px)" }}
             >
-              A Season<br />
+              Season<br />
               of <span style={{ color: BLUE }}>Confidence.</span>
             </h1>
             <p
               className="mt-8 font-serif italic"
               style={{ color: NAVY, fontSize: "clamp(20px, 2.4vw, 26px)", lineHeight: 1.35 }}
             >
-              Fight Like a Girl — Spring 2026 across 14 Chicago sites.
+              Fight Like a Girl, Spring 2026, across 14 Chicago sites.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
@@ -283,26 +283,17 @@ function Hero() {
           </div>
           <div className="relative">
             <div
-              className="rounded-md overflow-hidden"
+              className="rounded-md overflow-hidden bg-white"
               style={{ aspectRatio: "3 / 4", boxShadow: "0 30px 60px -30px rgba(0,28,51,0.35)" }}
             >
               <img
                 src={flagHome.url}
                 alt="A Fight Like a Girl athlete"
                 className="w-full h-full object-cover"
+                style={{ display: "block" }}
               />
             </div>
-            <div
-              className="absolute -bottom-6 -left-6 hidden md:block rounded-md p-5"
-              style={{ background: LEMON, border: `1px solid ${NAVY}` }}
-            >
-              <div className="font-display" style={{ color: NAVY, fontSize: 44, lineHeight: 1 }}>
-                85%
-              </div>
-              <div className="font-body mt-2" style={{ color: NAVY, fontSize: 13, maxWidth: 160 }}>
-                of girls report feeling more confident after FLAG.
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>
