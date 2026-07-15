@@ -296,7 +296,6 @@ function Hero() {
           </div>
         </div>
       </div>
-      </div>
       <div className="mx-auto max-w-[1120px] px-6 md:px-10 pb-14">
         <div className="rule" />
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 font-body text-[13px]" style={{ color: NAVY, opacity: 0.7 }}>
