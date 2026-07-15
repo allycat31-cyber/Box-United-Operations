@@ -84,10 +84,12 @@ function StatCard({
   n,
   l,
   variant = "blue",
+  nSize = "clamp(44px, 6vw, 64px)",
 }: {
   n: string;
   l: string;
   variant?: "blue" | "navy" | "lemon";
+  nSize?: string;
 }) {
   const bg =
     variant === "navy" ? NAVY : variant === "lemon" ? LEMON : "#ffffff";
@@ -103,7 +105,7 @@ function StatCard({
     >
       <div
         className="font-display"
-        style={{ color: numColor, fontSize: "clamp(44px, 6vw, 64px)", lineHeight: 1 }}
+        style={{ color: numColor, fontSize: nSize, lineHeight: 1 }}
       >
         {n}
       </div>
