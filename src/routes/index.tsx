@@ -4,6 +4,7 @@ import boxLogo from "@/assets/box-united-logo.png.asset.json";
 import flagHome from "@/assets/flag-home.webp.asset.json";
 import girlsTwo from "@/assets/girls-two.jpg.asset.json";
 import flagLogo from "@/assets/flag-logo.png.asset.json";
+import chicagoMap from "@/assets/chicago-map.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -191,7 +192,7 @@ function Quote({
         className="mt-4 font-display"
         style={{ color: BLUE, fontSize: 12, letterSpacing: "0.22em" }}
       >
-        — {who}
+       , {who}
       </figcaption>
     </figure>
   );
@@ -254,14 +255,14 @@ function Hero() {
               className="font-display mt-6 leading-[0.88]"
               style={{ color: NAVY, fontSize: "clamp(56px, 10vw, 112px)" }}
             >
-              A Season<br />
+              Season<br />
               of <span style={{ color: BLUE }}>Confidence.</span>
             </h1>
             <p
               className="mt-8 font-serif italic"
               style={{ color: NAVY, fontSize: "clamp(20px, 2.4vw, 26px)", lineHeight: 1.35 }}
             >
-              Fight Like a Girl — Spring 2026 across 14 Chicago sites.
+              Fight Like a Girl, Spring 2026, across 14 Chicago sites.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
@@ -282,25 +283,15 @@ function Hero() {
           </div>
           <div className="relative">
             <div
-              className="rounded-md overflow-hidden"
+              className="rounded-md overflow-hidden bg-white"
               style={{ aspectRatio: "3 / 4", boxShadow: "0 30px 60px -30px rgba(0,28,51,0.35)" }}
             >
               <img
                 src={flagHome.url}
                 alt="A Fight Like a Girl athlete"
                 className="w-full h-full object-cover"
+                style={{ display: "block" }}
               />
-            </div>
-            <div
-              className="absolute -bottom-6 -left-6 hidden md:block rounded-md p-5"
-              style={{ background: LEMON, border: `1px solid ${NAVY}` }}
-            >
-              <div className="font-display" style={{ color: NAVY, fontSize: 44, lineHeight: 1 }}>
-                85%
-              </div>
-              <div className="font-body mt-2" style={{ color: NAVY, fontSize: 13, maxWidth: 160 }}>
-                of girls report feeling more confident after FLAG.
-              </div>
             </div>
           </div>
         </div>
@@ -373,22 +364,22 @@ function ExecutiveSummary() {
       } />
       <div className="prose-none font-body space-y-5" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
         <p>
-          The Spring 2026 season of Fight Like a Girl reached <strong>216 girls</strong> across{" "}
+          The Spring 2026 season of Fight Like a Girl reached <strong>126 girls</strong> across{" "}
           <strong>14 Chicago sites</strong>, welcoming a new class of fighters into the ring and
           into the Fighter's Mindset curriculum. It is the first year of a three-year research
           cycle, and the first pillar under study is <em>confidence</em>.
         </p>
         <p>
-          The pillar cleared its benchmark decisively. <strong>85% of girls</strong> reported
-          feeling more confident after the program — a result that held across grades, sites, and
-          the elementary and middle-school groups that make up the heart of FLAG. Every survey
-          item measuring confidence, growth mindset, and physical identity averaged{" "}
-          <strong>above 4.0 on a 5-point scale</strong>.
+          The pillar cleared its benchmark decisively. Of the <strong>60 girls surveyed</strong>,{" "}
+          <strong>85%</strong> reported feeling more confident after the program, a result that
+          held across grades, sites, and the elementary and middle-school groups that make up the
+          heart of FLAG. Every survey item measuring confidence, growth mindset, and physical
+          identity averaged <strong>above 4.0 on a 5-point scale</strong>.
         </p>
         <p>
           The season also revealed a committed core: girls whose attendance stayed steady even as
-          schedules got busy, whose weekly rate <em>rose</em> in the back half of the season.
-          Their words — captured throughout this report — describe confidence that reaches beyond
+          schedules got busy, and whose weekly rate <em>rose</em> in the back half of the season.
+          Their words, captured throughout this report, describe confidence that reaches beyond
           the gym, into classrooms, friendships, and how they see their own bodies.
         </p>
       </div>
@@ -407,8 +398,8 @@ function ExecutiveSummary() {
           { t: "Transfer is real", d: "Girls describe confidence at school, at home, and in their own bodies." },
         ].map((it) => (
           <div key={it.t} className="p-5" style={{ borderTop: `3px solid ${BLUE}` }}>
-            <div className="font-serif font-bold" style={{ color: NAVY, fontSize: 22 }}>{it.t}</div>
-            <div className="font-body mt-2" style={{ color: NAVY, opacity: 0.8, fontSize: 15, lineHeight: 1.5 }}>{it.d}</div>
+            <div className="font-serif font-bold whitespace-nowrap" style={{ color: NAVY, fontSize: 17 }}>{it.t}</div>
+            <div className="font-body mt-2" style={{ color: NAVY, opacity: 0.8, fontSize: 14, lineHeight: 1.5 }}>{it.d}</div>
           </div>
         ))}
       </div>
@@ -439,7 +430,7 @@ function Confidence() {
       } />
 
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
-        The confidence pillar's success benchmark is straightforward — <strong>80% or more</strong>{" "}
+        The confidence pillar's success benchmark is straightforward, <strong>80% or more</strong>{" "}
         of girls report feeling more confident after the program. FLAG cleared it on the two
         headline items and on the growth-mindset item too, with a composite rate of{" "}
         <strong>90%</strong> across the two core confidence measures.
@@ -453,7 +444,7 @@ function Confidence() {
           ))}
         </div>
         <p className="mt-4 font-body italic" style={{ color: NAVY, opacity: 0.7, fontSize: 14 }}>
-          The physical and the psychological move together — girls who feel stronger also feel
+          The physical and the psychological move together, girls who feel stronger also feel
           more sure of themselves.
         </p>
       </div>
@@ -468,15 +459,15 @@ function Confidence() {
           </div>
           <p className="mt-4 font-body" style={{ color: NAVY, fontSize: 15, opacity: 0.8, lineHeight: 1.55 }}>
             Confidence gains are shared across the elementary and middle-school grades that make
-            up 56 of 60 respondents — a broad, consistent result rather than a spike at one age.
+            up 56 of 60 respondents, a broad, consistent result rather than a spike at one age.
           </p>
         </div>
         <div className="rounded-md p-7" style={{ background: NAVY, color: "#f7f5ed" }}>
-          <div className="font-display" style={{ color: LEMON, fontSize: 92, lineHeight: 1 }}>
+          <div className="font-display" style={{ color: BLUE, fontSize: 92, lineHeight: 1 }}>
             27
           </div>
           <div className="font-serif mt-3" style={{ fontSize: 22, lineHeight: 1.35 }}>
-            of 60 girls chose the top of the scale — "strongly agree" that they feel more confident
+            of 60 girls chose the top of the scale, "strongly agree" that they feel more confident
             after FLAG.
           </div>
           <div className="rule mt-6" style={{ background: "rgba(255,255,255,0.25)" }} />
@@ -500,8 +491,8 @@ function Voices() {
         <>In their <span style={{ color: BLUE, fontStyle: "italic" }}>own words.</span></>
       } />
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
-        Girls were never prompted with the word <em>confidence</em>. It surfaced anyway — again
-        and again — alongside themes that clearly live outside the gym.
+        Girls were never prompted with the word <em>confidence</em>. It surfaced anyway, again
+        and again, alongside themes that clearly live outside the gym.
       </p>
 
       <div className="mt-12 grid gap-5">
@@ -531,16 +522,16 @@ function Voices() {
         />
       </div>
 
-      <div className="mt-14 rounded-md p-7 md:p-9" style={{ background: LEMON, border: `1px solid ${NAVY}` }}>
+      <div className="mt-14 rounded-md p-7 md:p-9" style={{ background: "#ffffff", border: `1px solid ${NAVY}` }}>
         <div className="kicker" style={{ color: NAVY }}>What the girls value most</div>
         <div className="rule-thick my-4" style={{ background: NAVY }} />
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3 font-serif" style={{ color: NAVY, fontSize: 20 }}>
           {[
-            ["Boxing & physical training", "28"],
-            ["The other girls in the program", "23"],
-            ["My coach", "22"],
-            ["How I feel after class", "22"],
-            ["Learning about confidence & mindset", "18"],
+            ["Boxing & physical training", "47%"],
+            ["The other girls in the program", "38%"],
+            ["My coach", "37%"],
+            ["How I feel after class", "37%"],
+            ["Learning about confidence & mindset", "30%"],
           ].map(([l, n]) => (
             <div key={l} className="flex items-baseline justify-between gap-4 py-2 border-b" style={{ borderColor: "rgba(0,28,51,0.2)" }}>
               <span>{l}</span>
@@ -549,7 +540,7 @@ function Voices() {
           ))}
         </div>
         <p className="mt-5 font-body italic" style={{ color: NAVY, fontSize: 15, opacity: 0.85 }}>
-          Peers and coach rank nearly as high as the sport itself — a program girls feel they
+          Peers and coach rank nearly as high as the sport itself, a program girls feel they
           belong to. Confidence grows in exactly that kind of room.
         </p>
       </div>
@@ -584,7 +575,7 @@ function Reach() {
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
         FLAG is designed for South and West Side Chicago communities, and Spring 2026's roster
         reflects exactly that. <strong>135 girls</strong> receive free or reduced lunch and{" "}
-        <strong>90</strong> are identified as English Language Learners — strong signals that the
+        <strong>90</strong> are identified as English Language Learners, strong signals that the
         program is reaching the high-need student population it was built for.
       </p>
 
@@ -616,7 +607,7 @@ function Reach() {
             <Kicker>Neighborhoods represented</Kicker>
             <div className="rule-thick my-4" style={{ background: BLUE }} />
             <div className="font-serif font-bold" style={{ color: NAVY, fontSize: 28, lineHeight: 1.15 }}>
-              The strongest zip code is <span style={{ color: BLUE }}>60637</span> — Woodlawn and Greater Grand Crossing — with 28 girls.
+              The strongest zip code is <span style={{ color: BLUE }}>60637</span>, Woodlawn and Greater Grand Crossing, with 28 girls.
             </div>
             <ul className="mt-6 grid grid-cols-2 gap-y-2 gap-x-6 font-body" style={{ color: NAVY, fontSize: 16 }}>
               {[
@@ -636,8 +627,8 @@ function Reach() {
               ))}
             </ul>
           </div>
-          <div className="relative min-h-[300px]">
-            <img src={girlsTwo.url} alt="Two Fight Like a Girl athletes" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="relative min-h-[300px]" style={{ background: "var(--cream)" }}>
+            <img src={chicagoMap} alt="Map of Chicago showing FLAG neighborhoods" width={1024} height={1024} loading="lazy" className="absolute inset-0 w-full h-full object-contain p-4" />
           </div>
         </div>
       </div>
@@ -654,7 +645,7 @@ function ShowedUp() {
     { site: "John Fiske Elementary", avg: 12.2, rate: "71%" },
     { site: "St. Ann School", avg: 10.3, rate: "88%" },
     { site: "Mason Elementary", avg: 8.4, rate: "79%" },
-    { site: "West Side Community", avg: 7.9, rate: "72%" },
+    { site: "West Side - Chicago Youth Boxing Club", avg: 7.9, rate: "72%" },
     { site: "Nightingale Elementary", avg: 6.9, rate: "70%" },
   ];
   return (
@@ -664,7 +655,7 @@ function ShowedUp() {
       } />
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
         Five sites delivered <strong>10 or more weeks</strong> of programming this season.
-        Ranked by average girls present per session, a clear top tier emerged — sites where
+        Ranked by average girls present per session, a clear top tier emerged, sites where
         rosters filled and stayed filled, where the coach–athlete relationship deepened week over
         week.
       </p>
@@ -691,9 +682,9 @@ function ShowedUp() {
       </div>
 
       <div className="mt-12 grid md:grid-cols-3 gap-4">
-        <StatCard n="5" l="Sites completed 10+ weeks of programming" variant="blue" />
-        <StatCard n="88%" l="Highest site attendance rate — St. Ann" />
-        <StatCard n="12.2" l="Girls per week — John Fiske, top site" />
+        <StatCard n="76%" l="Combined attendance rate across top 5 sites" variant="blue" />
+        <StatCard n="88%" l="Highest site attendance rate, St. Ann" />
+        <StatCard n="12.2" l="Girls per week, John Fiske, top site" />
       </div>
     </Section>
   );
@@ -715,7 +706,6 @@ function Core() {
     { w: 8, v: 59, r: "72.8%" },
     { w: 9, v: 44, r: "69.8%" },
     { w: 10, v: 30, r: "68.2%" },
-    { w: 11, v: 5, r: "83.3%" },
   ];
   const maxV = 82;
   return (
@@ -726,9 +716,9 @@ function Core() {
       <p className="font-body" style={{ color: NAVY, fontSize: 18, lineHeight: 1.6 }}>
         One of the clearest signals of the season is quiet: as the calendar filled with end-of-year
         events and competing activities, the girls who stayed in FLAG showed up{" "}
-        <em>more reliably</em>, not less. Weekly attendance rates <strong>rose</strong> from 63% in
-        Week 1 to 83% in Week 11. A smaller, committed core of fighters kept coming — and their
-        rate of return climbed with them.
+        <em>more reliably</em>, not less. Weekly attendance rates climbed from{" "}
+        <strong>63% in Week 1</strong> to nearly <strong>73% by Week 8</strong>. A smaller,
+        committed core of fighters kept coming, and their rate of return climbed with them.
       </p>
 
       <div className="mt-12 rounded-md p-8" style={{ background: "#ffffff", border: "1px solid rgba(0,28,51,0.12)" }}>
@@ -744,9 +734,9 @@ function Core() {
             <span className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{ background: BLUE }} /> Attendance rate</span>
           </div>
         </div>
-        <div className="grid grid-cols-11 gap-2 items-end h-56">
+        <div className="grid grid-cols-10 gap-2 h-56">
           {weekly.map((w) => (
-            <div key={w.w} className="flex flex-col items-center gap-1">
+            <div key={w.w} className="flex flex-col items-center justify-end gap-1 h-full">
               <div
                 className="w-full rounded-t-sm"
                 style={{
@@ -760,7 +750,7 @@ function Core() {
             </div>
           ))}
         </div>
-        <div className="mt-6 grid grid-cols-11 gap-2 text-center">
+        <div className="mt-6 grid grid-cols-10 gap-2 text-center">
           {weekly.map((w) => (
             <div key={w.w} className="font-display" style={{ color: BLUE, fontSize: 11 }}>
               {w.r}
@@ -768,15 +758,15 @@ function Core() {
           ))}
         </div>
         <p className="mt-6 font-body italic" style={{ color: NAVY, opacity: 0.75, fontSize: 14 }}>
-          Headcount narrowed. The core stayed — and their rate of return climbed 20 points from
-          Week 1 to Week 11.
+          Headcount narrowed. The core stayed, and their rate of return climbed roughly 10 points
+          from Week 1 to Week 8.
         </p>
       </div>
 
       <div className="mt-14 grid md:grid-cols-3 gap-4">
         <StatCard n="126" l="Girls attended at least one session" />
-        <StatCard n="+20 pts" l="Attendance rate lift from Week 1 to Week 11" variant="blue" />
-        <StatCard n="83%" l="Peak weekly attendance rate — Week 11" variant="lemon" />
+        <StatCard n="+10 pts" l="Attendance rate lift from Week 1 to Week 8" variant="blue" />
+        <StatCard n="72.8%" l="Peak weekly attendance rate, Week 8" variant="blue" />
       </div>
     </Section>
   );
@@ -816,23 +806,23 @@ function Ahead() {
   return (
     <Section id="ahead" bg="navy">
       <div className="mb-10">
-        <div className="kicker" style={{ color: LEMON }}>07 · Looking Ahead</div>
-        <div className="rule-thick mb-6" style={{ background: LEMON }} />
+        <div className="kicker" style={{ color: BLUE }}>07 · Looking Ahead</div>
+        <div className="rule-thick mb-6" style={{ background: BLUE }} />
         <h2 className="font-serif font-bold leading-[1.05] tracking-tight" style={{ color: "#f7f5ed", fontSize: "clamp(40px, 6vw, 68px)" }}>
-          Building on <span style={{ color: LEMON, fontStyle: "italic" }}>a strong first year.</span>
+          Building on <span style={{ color: BLUE, fontStyle: "italic" }}>a strong first year.</span>
         </h2>
       </div>
 
       <p className="font-body" style={{ color: "rgba(247,245,237,0.9)", fontSize: 18, lineHeight: 1.6 }}>
         Spring 2026 established the baseline. The three-year research cycle now has a first
-        chapter it can measure against — and a clear set of moves to make the next season even
+        chapter it can measure against, and a clear set of moves to make the next season even
         stronger.
       </p>
 
       <div className="mt-12 grid md:grid-cols-2 gap-x-8 gap-y-8">
         {steps.map((s, i) => (
           <div key={s.t} className="grid grid-cols-[64px_1fr] gap-5">
-            <div className="font-display" style={{ color: LEMON, fontSize: 44, lineHeight: 1 }}>
+            <div className="font-display" style={{ color: BLUE, fontSize: 44, lineHeight: 1 }}>
               {String(i + 1).padStart(2, "0")}
             </div>
             <div>
@@ -851,7 +841,7 @@ function Ahead() {
         </div>
         <div className="mt-6 flex items-center gap-4">
           <img src={flagLogo.url} alt="Fight Like a Girl" className="h-10 w-auto object-contain" />
-          <div className="font-display" style={{ color: LEMON, fontSize: 12, letterSpacing: "0.22em" }}>
+          <div className="font-display" style={{ color: BLUE, fontSize: 12, letterSpacing: "0.22em" }}>
             Fight Like a Girl · 2026–29 Research Cycle
           </div>
         </div>
