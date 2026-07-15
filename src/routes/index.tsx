@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import boxLogo from "@/assets/box-united-blue.png.asset.json";
 import flagHome from "@/assets/flag-home-2.webp.asset.json";
 import flagLogo from "@/assets/flag-sticker.png.asset.json";
+import girlsTwo from "@/assets/girls-two-new.jpg.asset.json";
 import chicagoMap from "@/assets/chicago-map-new.png.asset.json";
 
 export const Route = createFileRoute("/")({
