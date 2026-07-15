@@ -191,7 +191,7 @@ function Quote({
         className="mt-4 font-display"
         style={{ color: BLUE, fontSize: 12, letterSpacing: "0.22em" }}
       >
-       , {who}
+       — {who}
       </figcaption>
     </figure>
   );
